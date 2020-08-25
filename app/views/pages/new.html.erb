@@ -1,0 +1,17 @@
+# <h1>Pages#new</h1>
+# <p>Find me in app/views/pages/new.html.erb</p>
+
+
+<h1>New Page</h1>
+<%= form_for @page do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+<% end %>
